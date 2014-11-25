@@ -1,0 +1,41 @@
+Neha Mundada
+-------------------------------------------------------------------------------------------------------------------------------------------
+Source code:
+
+File FrequencyCOunter.js has all source code for the assignment
+I have dcumented all my source code, with approach.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Description of approach:
+
+Developed assignment with object oriented approach. Since, we can maitain memeber variables and member methods, preferred to develop an object oriented approach.
+
+classes: 
+1)FrequencyCounter - this class contains method to return wordList ordered by word frequency.
+2) Token - This contains word and it's frequnecy. This class is seperated so that, we can have word and it's count tied togther.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Cases Handled:
+
+1. If null/empty string is provided as input then empty array is returned
+2. If numberOfItems is less then zero then error message given and empty array is returned
+3. If numberOfItems is greater than unique words then all the words are returned
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Output
+
+The program has been given a sample inut right now, ans its returns array of words ordered by frequnecy. To run on more test cases, input parameters can be changed with test cases values.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Description on time complexity:
+
+	The solution is developed using counting sort. It is a linear sorting algorithm and runs in O(n) time complexity. 
+	This algorthm works in O(n) complexity as follows:
+	Suppose frequency count is in the range of 1-k, where k = O(n)
+	The initialization of the Count array, and the second for loop which performs a prefix sum on the count array, each iterate at most k + 1 times and therefore take O(k) time. The other two for loops, and the initialization of the output array, each take O(n) time. 
+	Therefore toatl time complexity of entire algorithm = O(n) + O(k) + O(n) + O(k) = O(n)  (Assuming n >> k  most of the time) 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Description on space complexity:
+
+Because it uses arrays of length k + 1 and n, the total space usage of the algorithm is also O(n + k) = O(n), as k = O(n). For problem instances in which the maximum key value is significantly smaller than the number of items, counting sort can be highly space-efficient, as the only storage it uses other than its input and output arrays is the Count array which uses space O(k).
