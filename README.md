@@ -1,6 +1,6 @@
 Word_Frequency_counter
 ======================
-Implemented the function such that it returns a list of Strings ordered by word frequency, the most frequently occurring word first as follows:
+Implemented the function such that it returns a list of Strings ordered by word frequency, the most frequently occurring word first as follows: 
 
 
 A function that takes two parameters:
